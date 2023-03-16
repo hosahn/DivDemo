@@ -1,5 +1,6 @@
-{    "ts-node": {
-  // Do not forget to `npm i -D tsconfig-paths`
+{    
+  
+"ts-node": {
   "require": ["tsconfig-paths/register"]
 },
   "compilerOptions": {

@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { Router } from "express";
 const submitRouter = Router();
-submitRouter.get("/result", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+submitRouter.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.send(req.body);
 }));
-export { submitRouter };
+export default submitRouter;

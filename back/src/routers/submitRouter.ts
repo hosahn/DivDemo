@@ -2,8 +2,8 @@ import { Router } from "express";
 
 const submitRouter : Router = Router();
 
-submitRouter.get("/result", async (req, res) => {
+submitRouter.get("/", async (req, res) => {
     res.send(req.body);
 });
 
-export {submitRouter}
+export default submitRouter

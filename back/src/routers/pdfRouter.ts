@@ -6,4 +6,4 @@ pdfRouter.get("/", async (req, res) => {
     res.send(req.body);
 });
 
-export { pdfRouter }
+export default pdfRouter

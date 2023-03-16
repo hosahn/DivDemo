@@ -1,13 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import "react-toastify/dist/ReactToastify.css";
+import MainPage from "./pages/main.js";
+import AnalysisPage from "./pages/analysis.js";
 
 function App() {
   return (
     <>
       <Router>
-        <Routes></Routes>
+        <Routes>
+          <Route path="/" exact element={<MainPage />} />
+          <Route path="/analysis" exact element={<AnalysisPage />} />
+        </Routes>
       </Router>
     </>
   );
